@@ -20,22 +20,36 @@
     align-items: flex-start;
     flex-direction: column;
     justify-content: space-between;
-    background: url('../../images/landing.svg') no-repeat 80% center;
-
+    /* background: url('../../images/landing.svg') no-repeat 80% center; */
+    
 }
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-left: 200px;
+  }
+  
+.background .img-background {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+  }
 
-#page-landing .content-wrapper main {
+#page-landing .content-wrapper .main {
     max-width: 350px;
+    position: relative;
+
 }
 
-#page-landing .content-wrapper main h1 {
+#page-landing .content-wrapper .main h1 {
     font-size: 76px;
     font-weight: 900;
     line-height: 70px;
     
 }
 
-#page-landing .content-wrapper main p {
+#page-landing .content-wrapper .main p {
     margin-top: 40px;
     font-size: 24px;
     line-height: 34px;
@@ -75,4 +89,64 @@
 }
 .content-wrapper .enter-app:hover {
     background: #96feff;
+}
+
+@media (max-width: 699px) {
+    #page-landing img {
+        width: 300px;
+        margin-left: 5px;
+        margin-top: 5px;
+        
+    }
+    #page-landing .content-wrapper .background .img-background{
+        width: 50%;
+        margin-left: 0%;
+    }
+    #page-landing .content-wrapper .background{
+        position: flex;
+        margin-left: 50%;
+    }
+    #page-landing .content-wrapper .main{
+        top: 0;
+        max-height: 400px;
+        position: relative;
+        justify-self: auto;
+        margin-top: 0;
+           
+    }
+    #page-landing .content-wrapper .main h1 {
+        font-size: 50px;
+        justify-self: center;
+        margin-top: 50px;
+        
+    }
+
+    #page-landing .content-wrapper .main p {
+        font-size: 34px;
+        display: flex;
+
+    }
+
+    .content-wrapper .enter-app {
+        width: 50px;        
+        height: 50px;
+        margin-bottom: 4%;
+        margin-right: 5%;
+        border-radius: 15px;
+    }
+
+
+    .content-wrapper .location {
+        position: flex;
+        font-size: 15px;
+        line-height: 17px;
+        right: auto;
+        top: auto;
+        left: 0;
+        bottom: 0;
+        text-align: left;
+
+    }
+
+
 }

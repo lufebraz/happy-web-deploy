@@ -3,7 +3,7 @@ import React from 'react';
 import '../styles/pages/landing.css';
 import { FiArrowRight } from 'react-icons/fi';
 import logoimg from '../images/logo.svg';
-
+import background from '../images/landing.svg'
 import { Link } from 'react-router-dom';
 
 
@@ -11,9 +11,12 @@ function Landing() {
     return (
         <div id="page-landing">
             <div className="content-wrapper">
+            <div className="background">
+            <img src={background} alt="Wallpaper" className="img-background" />
+            </div>
                 <img src={logoimg} alt="Happy" />
 
-                <main>
+                <main className="main">
                     <h1>Leve felicidade para o mundo</h1>
                     <p>Visite orfanatos e mude o dia de muitas crianças.</p>
                 </main>
