@@ -203,7 +203,14 @@ form.create-orphanage-form button.confirm-button:hover {
 }
 
 @media (max-width: 699px) {
-  
+  form.create-orphanage-form {
+    width: 699px;
+    padding-left: 15px;
+    padding-right: 25px;
+  }
+  form.create-orphanage-form .input-block .images-container .new-image {
+    height: 60px;
+  }
   #page-create-orphanage .header{
     width: 699px;
        
