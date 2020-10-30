@@ -187,21 +187,25 @@ form.create-orphanage-form button.confirm-button:hover {
     background: #12AFCB;
     width: 100vw;
     padding: 10px;
-    justify-content: space-between;
+    height: 15vh;
+    /* justify-content: space-between; */
     
   }
   #page-create-orphanage .goback{
       display: flex;
-      width: 50px;        
-      height: 50px;
-      margin-top: 15px;
+      width: 8vw;        
+      height: 8vh;
+      margin-left: 10px;
+      margin-top: 25px;
+      margin-right: 16vw;
       
   }
   #page-create-orphanage .imghappy{
-    width: 200px;
-    margin-right: 35%;
+    width: 45vw;
+    object-position: center;
   }
   form.create-orphanage-form {
+    position: flex;
     width: 100vw;
     padding-left: 15px;
     padding-right: 15px;
@@ -211,5 +215,48 @@ form.create-orphanage-form button.confirm-button:hover {
   }
 }
   
+@media (max-height: 599px) {
+  #page-create-orphanage aside{
+    display: none;
+  }
+
+  #page-create-orphanage .header{
+    position: absolute;
+    display: flex;
+    background: #12AFCB;
+    width: 100vw;
+    padding: 10px;
+    min-height: 50px;
+    min-height: 70px;
+    height: 17vh;
+    /* justify-content: space-between; */
+    
+  }
+  #page-create-orphanage .goback{
+      display: flex;
+      width: 8vw;        
+      height: 8vh;
+      margin-left: 20px;
+      margin-top: 3vh;
+      margin-right: 16vw;
+      
+  }
+  #page-create-orphanage .imghappy{
+    min-height: 50px;
+    width: 45vw;
+    object-position: center;
+  }
+  form.create-orphanage-form {
+    position: flex;
+    width: 100vw;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  form.create-orphanage-form .input-block .images-container .new-image {
+    height: 60px;
+  }
+}
+  
+
 
   

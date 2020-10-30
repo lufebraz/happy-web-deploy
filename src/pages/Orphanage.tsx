@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
-import { FiClock, FiInfo, } from "react-icons/fi";
+import { FiArrowLeft, FiClock, FiInfo, } from "react-icons/fi";
 import { Map, Marker, TileLayer } from "react-leaflet";
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 import '../styles/pages/orphanage.css';
 import Sidebar from "../components/Sidebar";
+import markerimg from '../images/map-marker.svg';
 import mapIcon from "../utils/mapicon";
 import api from "../services/api";
 
@@ -47,6 +48,14 @@ export default function Orphanage() {
     <div id="page-orphanage">
       <Sidebar />
 
+      <header className="header">
+        <Link to="/app" className="goback">
+          <FiArrowLeft size={32} color="#FFF" />
+        </Link>
+        <h3 className="details">Detalhes do Orfanato:</h3>
+        <img src={markerimg} alt="Happy" className="markerimg" />
+      </header>
+
       <main>
         <div className="orphanage-details">
           <img src={orphanage.images[activeImageIndex].url} alt={orphanage.name} />
@@ -60,7 +69,7 @@ export default function Orphanage() {
                   onClick={() => {
                     setActiveImageIndex(index);
                   }}>
-                    
+
                   <img src={image.url} alt={orphanage.name} />
                 </button>
               );

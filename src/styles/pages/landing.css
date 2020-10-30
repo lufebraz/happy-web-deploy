@@ -80,7 +80,67 @@
 .content-wrapper .enter-app:hover {
     background: #96feff;
 }
+@media (max-height: 599px) {
+    #page-landing img {
+        width: 300px;
+        margin-left: 5px;
+        margin-top: 5px;
+        
+    }
 
+    #page-landing .content-wrapper {
+        justify-content: flex-start;
+        margin-left: 10px;
+        background: url('../../images/landing.svg') no-repeat 90% 90%;
+        background-size: 240px;
+       
+    }
+    #page-landing .content-wrapper main{
+        max-width: 100%;
+        top: 0;
+        max-height: 400px;
+        position: relative;
+        justify-self: auto;
+        margin-top: 0;
+           
+    }
+    #page-landing .content-wrapper main h1 {
+        
+        font-size: 45px;
+        justify-self: center;
+        margin-top: 50px;
+        line-height: 45px;
+        
+    }
+
+    #page-landing .content-wrapper main p {
+        font-size: 30px;
+        display: flex;
+        
+    }
+
+    .content-wrapper .enter-app {
+        width: 50px;        
+        height: 50px;
+        margin-bottom: 4%;
+        margin-right: 5%;
+        border-radius: 15px;
+    }
+
+
+    .content-wrapper .location {
+        position: flex;
+        font-size: 15px;
+        line-height: 17px;
+        right: auto;
+        top: auto;
+        bottom: 0;
+        text-align: left;
+        margin-bottom: 20px;
+
+    }
+ 
+}
 @media (max-width: 699px) {
     #page-landing img {
         width: 300px;

@@ -132,7 +132,49 @@
 #page-map .map-popup .leaflet-popup-tip-content {
     display: none;
 }
-
+@media (max-height: 599px) {
+    #page-map {
+        flex-direction: column;
+        position: relative;
+    }
+    #page-map aside {
+        display: none;
+    }
+    #page-map .goback {
+        display: flex;
+        width: 50px;        
+        height: 50px;
+    }
+    #page-map .create-orphanage {
+        width: 50px;        
+        height: 50px;
+    }
+    
+    #page-map .header {
+        z-index: 6;
+    
+        line-height: 25px;
+        padding: 10px 10px 10px 10px;
+    
+        margin-top: 6px;
+        margin-right: 10px;
+        margin-left: 50px;
+    
+        width: auto;
+        background: #15c3d6;
+        border-radius: 20px;
+    
+        position: absolute;
+        display: flex;
+        height: auto;
+        font-size: 13px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+}
 @media (max-width: 699px) {
 #page-map {
     flex-direction: column;
