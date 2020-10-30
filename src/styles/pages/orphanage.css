@@ -181,7 +181,7 @@
 #page-orphanage .imghappy{
   display: none;
 }
-#page-orphanage .goback{
+#page-orphanage .goback1 {
   display: none;
 }
 #page-orphanage .header{
@@ -206,22 +206,11 @@
     justify-content: space-between;
     
   }
-  #page-orphanage .goback{
-      display: flex;
-      width: 8vw;        
-      height: 8vh;
-      margin-left: 4vw;
-      margin-top: 5vh;
-      margin-right: 5vw;
-      padding: 1px;
-      
-  }
+  
   #page-orphanage .markerimg{
     display: flex;
-    width: 10vw;
+    width: 50px;
     margin-right: 4vw;
-    margin-left: 5vw;
-
   }
   .orphanage-details {
     margin-top: 15vh;
@@ -271,7 +260,28 @@
 }
 
 @media (max-width: 892px) {
-
+  
+  #page-orphanage .goback1 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #page-orphanage .goback1{
+    background-color: #15bcda;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+  .orphanage-details .images button {
+    height: 50px;
+    width: 50px;
+  }
+  #page-orphanage main {
+    margin-top: 16vh;
+  }
   #page-orphanage aside{
     display: none;
   } 
@@ -285,25 +295,17 @@
     width: 100vw;
     padding: 0px 10px;
     height: 15vh;
-    justify-content: space-between;
+    align-items: center;
     
-  }
-  #page-orphanage .goback{
-      display: flex;
-      width: 8vw;        
-      height: 8vh;
-      margin-left: 4vw;
-      margin-top: 5vh;
-      margin-right: 5vw;
-      padding: 1px;
-      
+    justify-content: space-between;
+
+    
   }
   #page-orphanage .markerimg{
     display: flex;
-    width: 10vw;
+    width: 50px;
     margin-right: 4vw;
-    margin-left: 5vw;
-
+    
   }
   .orphanage-details {
     margin-top: 15vh;

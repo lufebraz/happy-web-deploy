@@ -49,9 +49,12 @@ export default function Orphanage() {
       <Sidebar />
 
       <header className="header">
-        <Link to="/app" className="goback">
-          <FiArrowLeft size={32} color="#FFF" />
-        </Link>
+        <div className="goback1">
+          <Link to="/app">
+            <FiArrowLeft size={32} color="#FFF" />
+          </Link>
+
+        </div>
         <h3 className="details">Detalhes do Orfanato:</h3>
         <img src={markerimg} alt="Happy" className="markerimg" />
       </header>

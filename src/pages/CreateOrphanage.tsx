@@ -82,12 +82,14 @@ export default function CreateOrphanage() {
    return (
       <div id="page-create-orphanage">
          <Sidebar />
-         
+
          <header className="header">
-            <Link to="/app" className="goback">
-               <FiArrowLeft size={32} color="#FFF" />
-            </Link>
-            <img src={logoimg} alt="Happy" className="imghappy"/>
+            <div className="goback1">
+               <Link to="/app">
+                  <FiArrowLeft size={32} color="#FFF" />
+               </Link>
+            </div>
+            <img src={logoimg} alt="Happy" className="imghappy" />
          </header>
 
          <main>

@@ -10,6 +10,69 @@
     display: none;
 }
 
+
+#page-map aside {
+    width: 350px;
+    background: linear-gradient(329.54deg, #29B6D1 0%, #00C7C7 100%);
+    padding: 80px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#page-map aside h2{
+    width: 300px;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 42px;
+    margin-top: 64px;
+    
+}
+#page-map aside p {
+    width: auto;
+    line-height: 28px;
+    margin-top: 24px;
+}
+
+#page-map aside footer {
+    display: flex;
+    flex-direction: column;
+    
+    line-height: 24px;
+}
+
+#page-map aside footer strong {
+    font-weight: 800;
+    
+}
+#page-map .leaflet-container {
+    z-index: 5;
+}
+
+#page-map .create-orphanage {
+    position: absolute;
+    
+    right: 40px;
+    bottom: 40px;
+    
+    z-index: 10;
+    
+    width: 64px;
+    height: 64px;
+    background: #15c3d6;
+    border-radius: 20px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background-color 0.3s;
+}
+
+#page-map .create-orphanage:hover {
+    background: #17d6eb;
+}
 #page-map .goback {
     position: absolute;
 
@@ -31,69 +94,6 @@
 
 }
 #page-map .goback :hover {
-    background: #17d6eb;
-}
-
-#page-map aside {
-    width: 350px;
-    background: linear-gradient(329.54deg, #29B6D1 0%, #00C7C7 100%);
-    padding: 80px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-#page-map aside h2{
-    width: 300px;
-    font-size: 40px;
-    font-weight: 800;
-    line-height: 42px;
-    margin-top: 64px;
-
-}
-#page-map aside p {
-    width: auto;
-    line-height: 28px;
-    margin-top: 24px;
-}
-
-#page-map aside footer {
-    display: flex;
-    flex-direction: column;
-
-    line-height: 24px;
-}
-
-#page-map aside footer strong {
-    font-weight: 800;
-    
-}
-#page-map .leaflet-container {
-    z-index: 5;
-}
-
-#page-map .create-orphanage {
-    position: absolute;
-
-    right: 40px;
-    bottom: 40px;
-
-    z-index: 10;
-
-    width: 64px;
-    height: 64px;
-    background: #15c3d6;
-    border-radius: 20px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    transition: background-color 0.3s;
-}
-
-#page-map .create-orphanage:hover {
     background: #17d6eb;
 }
 
@@ -140,9 +140,12 @@
     #page-map aside {
         display: none;
     }
+    #page-map .goback a{
+        height: 32px;
+    }
     #page-map .goback {
         display: flex;
-        width: 50px;        
+        width: 50px;
         height: 50px;
     }
     #page-map .create-orphanage {
@@ -184,10 +187,14 @@
     display: none;
 }
 #page-map .goback {
-    display: flex;
-    width: 50px;        
+    width: 50px;
     height: 50px;
+    display: flex;
 }
+#page-map .goback a{
+    height: 32px;
+}
+
 #page-map .create-orphanage {
     width: 50px;        
     height: 50px;

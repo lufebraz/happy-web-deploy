@@ -10,7 +10,9 @@
   display: none;
   
 }
-
+#page-create-orphanage .goback1 {
+  display: none;
+}
 form.create-orphanage-form {
   width: 700px;
   margin: 64px auto;
@@ -177,6 +179,9 @@ form.create-orphanage-form button.confirm-button:hover {
 }
 
 @media (max-width: 740px) {
+  #page-create-orphanage main {
+    margin-top: 92px;
+  }
   #page-create-orphanage aside{
     display: none;
   }
@@ -187,24 +192,32 @@ form.create-orphanage-form button.confirm-button:hover {
     background: #12AFCB;
     width: 100vw;
     padding: 10px;
-    height: 15vh;
-    /* justify-content: space-between; */
+    height: 11vh;
+    align-items: center;
+    justify-content: space-between;
     
   }
-  #page-create-orphanage .goback{
-      display: flex;
-      width: 8vw;        
-      height: 8vh;
-      margin-left: 10px;
-      margin-top: 25px;
-      margin-right: 16vw;
-      
+  #page-create-orphanage .goback1 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+  #page-create-orphanage .goback1{    
+    background-color: #15bcda;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+  
   #page-create-orphanage .imghappy{
-    width: 45vw;
-    object-position: center;
+    height: 100%;
+    flex: 1;
   }
   form.create-orphanage-form {
+    margin-top: 0;
     position: flex;
     width: 100vw;
     padding-left: 15px;
@@ -216,6 +229,9 @@ form.create-orphanage-form button.confirm-button:hover {
 }
   
 @media (max-height: 599px) {
+  #page-create-orphanage main {
+    margin-top: 93px;
+  }
   #page-create-orphanage aside{
     display: none;
   }
@@ -229,24 +245,30 @@ form.create-orphanage-form button.confirm-button:hover {
     min-height: 50px;
     min-height: 70px;
     height: 17vh;
-    /* justify-content: space-between; */
+    justify-content: center;
+    align-items: center;
     
   }
-  #page-create-orphanage .goback{
-      display: flex;
-      width: 8vw;        
-      height: 8vh;
-      margin-left: 20px;
-      margin-top: 3vh;
-      margin-right: 16vw;
-      
+  #page-create-orphanage .goback1 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+  #page-create-orphanage .goback1{    
+    background-color: #15bcda;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
   #page-create-orphanage .imghappy{
-    min-height: 50px;
-    width: 45vw;
-    object-position: center;
+    height: 100%;
+    flex: 1;
   }
   form.create-orphanage-form {
+    margin-top: 0;
     position: flex;
     width: 100vw;
     padding-left: 15px;
