@@ -3,7 +3,12 @@
 }
 
 #page-create-orphanage main {
+
   flex: 1;
+}
+#page-create-orphanage .header {
+  display: none;
+  
 }
 
 form.create-orphanage-form {
@@ -35,12 +40,12 @@ form.create-orphanage-form fieldset + fieldset {
 
 form.create-orphanage-form fieldset legend {
   width: 100%;
-
+  
   font-size: 32px;
   line-height: 34px;
   color: #5C8599;
   font-weight: 700;
-
+  
   border-bottom: 1px solid #D3E2E5;
   margin-bottom: 40px;
   padding-bottom: 24px;
@@ -169,4 +174,39 @@ form.create-orphanage-form button.confirm-button svg {
 
 form.create-orphanage-form button.confirm-button:hover {
   background: #36CF82;
+}
+
+@media (max-width: 740px) {
+  #page-create-orphanage aside{
+    display: none;
+  }
+
+  #page-create-orphanage .header{
+    position: absolute;
+    display: flex;
+    background: #12AFCB;
+    width: 740px;
+    padding: 10px;
+    
+  }
+  #page-create-orphanage .goback{
+      display: flex;
+      width: 50px;        
+      height: 50px;
+      margin-top: 15px;
+      
+  }
+  #page-create-orphanage .imghappy{
+    width: 200px;
+    margin-left: 25%;
+  }
+}
+
+@media (max-width: 699px) {
+  
+  #page-create-orphanage .header{
+    width: 699px;
+       
+  }
+
 }

@@ -2,14 +2,16 @@ import React, { FormEvent, useState, ChangeEvent } from "react";
 import { Map, Marker, TileLayer } from 'react-leaflet';
 import { LeafletMouseEvent } from 'leaflet';
 
-import { FiPlus } from "react-icons/fi";
+import { FiArrowLeft, FiPlus } from "react-icons/fi";
 
 import Sidebar from "../components/Sidebar";
+import logoimg from '../images/logo.svg';
+
 
 import '../styles/pages/create-orphanage.css';
 import mapIcon from "../utils/mapicon";
 import api from "../services/api";
-import { useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 
 export default function CreateOrphanage() {
@@ -34,7 +36,7 @@ export default function CreateOrphanage() {
       });
    }
 
-   function handleSelectImages(event: ChangeEvent<HTMLInputElement>){
+   function handleSelectImages(event: ChangeEvent<HTMLInputElement>) {
       if (!event.target.files) {
          return;
       }
@@ -62,7 +64,7 @@ export default function CreateOrphanage() {
       data.append('latitude', String(latitude));
       data.append('longitude', String(longitude));
       data.append('instructions', instructions);
-      data.append('opening_hours',opening_hours);
+      data.append('opening_hours', opening_hours);
       data.append('open_on_weekends', String(open_on_weekends));
 
       images.forEach(image => {
@@ -72,7 +74,7 @@ export default function CreateOrphanage() {
       await api.post('orphanages', data);
 
       alert('Cadastro realizado com sucesso!')
-      
+
       history.push('/app');
 
    }
@@ -80,11 +82,17 @@ export default function CreateOrphanage() {
    return (
       <div id="page-create-orphanage">
          <Sidebar />
+         <header className="header">
+            <Link to="/app" className="goback">
+               <FiArrowLeft size={32} color="#FFF" />
+            </Link>
+            <img src={logoimg} alt="Happy" className="imghappy"/>
+         </header>
 
          <main>
             <form onSubmit={handleSubmit} className="create-orphanage-form">
                <fieldset>
-                  <legend>Dados</legend>
+                  <legend>Dados do Orfanato</legend>
 
                   <Map
                      center={[-15.7896516, -47.8870264]}
@@ -128,7 +136,7 @@ export default function CreateOrphanage() {
                      <div className="images-container">
                         {previewImages.map(image => {
                            return (
-                              <img key={image} src={image} alt={name}/>
+                              <img key={image} src={image} alt={name} />
                            )
                         })}
                         <label htmlFor="image[]" className="new-image">
@@ -136,7 +144,7 @@ export default function CreateOrphanage() {
                         </label>
                      </div>
 
-                     <input multiple onChange={handleSelectImages} type="file" id="image[]"/>
+                     <input multiple onChange={handleSelectImages} type="file" id="image[]" />
 
                   </div>
                </fieldset>
@@ -186,7 +194,7 @@ export default function CreateOrphanage() {
 
                <button className="confirm-button" type="submit">
                   Confirmar
-          </button>
+               </button>
             </form>
          </main>
       </div>

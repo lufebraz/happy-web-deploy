@@ -172,3 +172,6 @@
 .orphanage-details .orphanage-details-content button.contact-button:hover {
   background: #36CF82;
 }
+@media (max-width: 699px) {
+  
+}
