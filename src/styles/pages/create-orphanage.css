@@ -185,8 +185,9 @@ form.create-orphanage-form button.confirm-button:hover {
     position: absolute;
     display: flex;
     background: #12AFCB;
-    width: 740px;
+    width: 100vw;
     padding: 10px;
+    justify-content: space-between;
     
   }
   #page-create-orphanage .goback{
@@ -198,22 +199,17 @@ form.create-orphanage-form button.confirm-button:hover {
   }
   #page-create-orphanage .imghappy{
     width: 200px;
-    margin-left: 25%;
+    
   }
-}
-
-@media (max-width: 699px) {
   form.create-orphanage-form {
-    width: 699px;
+    width: 100vw;
     padding-left: 15px;
     padding-right: 25px;
   }
   form.create-orphanage-form .input-block .images-container .new-image {
     height: 60px;
   }
-  #page-create-orphanage .header{
-    width: 699px;
-       
-  }
-
 }
+  
+
+  
