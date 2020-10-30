@@ -199,12 +199,12 @@ form.create-orphanage-form button.confirm-button:hover {
   }
   #page-create-orphanage .imghappy{
     width: 200px;
-    
+    margin-right: 35%;
   }
   form.create-orphanage-form {
     width: 100vw;
     padding-left: 15px;
-    padding-right: 25px;
+    padding-right: 15px;
   }
   form.create-orphanage-form .input-block .images-container .new-image {
     height: 60px;
